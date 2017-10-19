@@ -1,0 +1,17 @@
+Root 
+- Will need a Header
+Sections
+Shopping List (Feature)
+ - Shopping List Component
+ - Shopping List Edit
+Recipe Book (Feature)
+- Recipe List
+- Recipe Item
+- Recipe Detail Area
+
+Which data model are we using 
+Shopping List (Feature) 
+- Ingredient 
+
+Recipe Book (Feature) 
+- Recipe

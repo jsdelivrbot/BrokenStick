@@ -1,0 +1,13 @@
+applications:
+- path: .
+  command: node app.js
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: TestAngular2017
+  host: TestAngular2017
+  disk_quota: 1024M
+  services:
+  - TestAngular2017-cloudantNoSQLDB
+  env:
+   ENABLE_BLUEMIX_DEV_MODE: "true"
