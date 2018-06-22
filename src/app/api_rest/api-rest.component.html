@@ -1,0 +1,22 @@
+<section class="todoapp">
+  <app-todo-list-header
+    (add)="onAddTodo($event)"
+  ></app-todo-list-header>
+  <app-todo-list
+    [todos]="todos"
+    (toggleComplete)="onToggleTodoComplete($event)"
+    (remove)="onRemoveTodo($event)"
+  ></app-todo-list>
+  <app-todo-list-footer
+    [todos]="todos"
+  ></app-todo-list-footer>
+ 
+</section>
+<div>
+<button class="btn btn-success" type="submit" (click)="onSubmit()"> Start Local JSON Server </button>
+
+</div>
+<div>
+<hr>
+  <p> * built to test my ability to design an Angular site that uses a Web Service via json-server.  Continue to add to this project... attempting to connect to MySQL db</p>
+</div>

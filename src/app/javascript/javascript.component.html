@@ -1,0 +1,15 @@
+<div class="container">
+	<h1> Javascript Examples </h1>
+<form (ngSubmit)="isPrime()" #JscriptForm="ngForm">
+<div class="col-sm-5 form-group">
+<label for="name">Enter Number</label>
+<input type="text" id="jscript"
+ class="form-control" [(ngModel)]="jscript" name="jscript">
+<div>
+
+<button class="btn btn-success" type="submit">is Prime?</button>
+<div>
+<output type="text" id="out"
+ class="text" name="out" > -- Is Prime? "{{bool}}"</output>
+</div>
+</div>

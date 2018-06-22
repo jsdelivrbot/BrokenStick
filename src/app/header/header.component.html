@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a routerLink="/home" class="navbar-brand"> Broken Stick</a>
+		</div>
+		<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+				<li id="recipeNav" routerLinkActive="active"><a routerLink="recipes">Recipes</a></li>
+				<li id="projectNav" routerLinkActive="active"><a routerLink="project">Projects</a></li>
+				<li id="reportNav" routerLinkActive="active"><a routerLink="reportHome">Report Demo</a></li>
+				<li id="apirestNav" routerLinkActive="active"><a routerLink="apirest">API_Rest Demo</a></li>
+				<li id="databaseNav" routerLinkActive="active"><a routerLink="database">Database</a></li>
+				
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown" appDropdown>
+		<a class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+			<ul class="dropdown-menu" >
+				<li><a style="cursor: pointer;">Save Data</a></li>
+				<li><a style="cursor: pointer;">Fetch Data</a></li>
+			</ul>
+	</li>
+		</ul>
+		</div>
+	</div>
+</nav>

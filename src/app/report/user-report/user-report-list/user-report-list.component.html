@@ -1,0 +1,32 @@
+
+
+   <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+       
+    	<tr>
+            <td style="text-align:center;" colspan="9">
+                <h1>Registered</h1></td>
+        </tr>
+      <thead>     
+    	<tr style="border-bottom: double; background-color: blue; color: white" >
+    		<th style="border-right: double; padding-right: 20px">First Name</th>
+    		<th style="border-right: double; padding-right: 20px">Last Name</th>
+    		<th style="border-right: double; padding-right: 20px">Address1</th>
+    		<th style="border-right: double; padding-right: 20px">Address2</th>
+    		<th style="border-right: double; padding-right: 20px">City</th>
+    		<th style="border-right: double; padding-right: 20px">State</th>
+    		<th style="border-right: double; padding-right: 20px">Zipcode</th>
+    		<th style="border-right: double; padding-right: 20px">Country</th>
+    		<th style="border-right: double; padding-right: 20px">Date</th>
+
+    	</tr>
+    </thead>
+ 	<tbody>
+		<app-user-report-item 
+
+		*ngFor="let reportEl of reports; let i = index"
+		[report]="reportEl"
+		[index]="i">
+		</app-user-report-item>
+		
+    </tbody>
+	</table>

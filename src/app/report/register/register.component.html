@@ -1,0 +1,64 @@
+
+<div><h1>Register Here</h1>
+ <hr>
+ </div>
+ <div class="container ">
+ <div class="col-lg-11 jumbotron ">
+ 
+ <div> 
+  <form #regForm="ngForm" (ngSubmit)="onSubmit()">
+ <div class="form-group col-sm-4">
+    <label for="fname">First Name:</label>
+    <input type="text" class="form-control" style="width: 250px; margin: 2px 10px;" id="fname" name="fname" required >
+    </div>
+    
+ <div class="form-group col-sm-4">
+    <label for="lname">Last Name:</label>
+    <input type="text" class="form-control" style="width: 250px; margin: 2px 10px;" id="lname" required >
+  </div>
+  
+  <div class="form-group col-sm-12">
+    <label for="address1">Address 1:</label>
+    <input type="text" class="form-control" style="width: 500px; margin: 2px 10px;" id="address1" required [(ngModel)]="address1" name="address1" >
+  </div>
+  <br>
+  <div class="form-group col-sm-12">
+    <label for="address2">Address 2:</label>
+    <input type="text" class="form-control" style="width: 500px; margin: 2px 10px;" id="address2" [(ngModel)]="address2" name="address2" >
+  </div>
+  <br>
+  <div class="form-group col-sm-4">
+    <label for="city">City:</label>
+    <input  type="text" class="form-control" style="width: 250px; margin: 2px 10px;" id="city" required [(ngModel)]="city" name="city" >
+  </div>
+  <div class="form-group col-sm-6">
+    <label for="state">State:</label>
+    <input  type="text" class="form-control" style="width: 50px; margin: 2px 10px;" id="state" required [(ngModel)]="state" name="state" >
+  </div>
+  <div class="form-group col-sm-4">
+    <label for="zip">Zip(5 or 9 digit):</label>
+    <input  type="number" class="form-control" style="width: 150px; margin: 2px 10px;" id="zip" required pattern="^[1-9]+[0-9]*$" [(ngModel)]="zip" name="zip" >
+  </div>
+  <div class="form-group col-lg-6">
+    <label for="country">Country (US only):</label>
+    <input  type="text" class="form-control" style="width: 150px; margin: 2px 10px;" id="country" required [(ngModel)]="country" name="country" >
+  </div>
+
+  <div class="form-group col-lg-6">
+    <label for="country">Current Date:</label>
+    <output  type="text" class="form-control" style="width: 250px; margin: 2px 10px;" id="date" name="date" >{{dateNum | date: 'fullDate'}}</output>
+  </div>
+ 
+ <div class="col-lg-8">
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <br>
+  <button class="btn btn-success" type="submit" [disabled]="!regForm.form.valid" (click)="onSubmit()"> Submit </button>
+  
+  </div>
+</form> 
+
+</div>
+</div>
+</div> 
