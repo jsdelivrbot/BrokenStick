@@ -1,9 +1,19 @@
+
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
     "outDir": "../out-tsc/app",
+    "target": "es5",
     "module": "es2015",
-    "baseUrl": "https://testangular2017.mybluemix.net",
+    "baseUrl": "",
     "types": []
   },
   "exclude": [
