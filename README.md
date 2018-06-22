@@ -36,3 +36,4 @@ mstitt add to get working on Bluemix from Mac
     -- alter index location to ./src/index.html
 -- sudo npm install method-override
 -- index.html added <base href= https://testangular2017.mybluemix.net/
+# BrokenStick_final
