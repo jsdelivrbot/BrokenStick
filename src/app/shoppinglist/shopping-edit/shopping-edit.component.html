@@ -16,10 +16,17 @@
 </div>
 <div class="row">
 <div class="col-xs-12">
+<<<<<<< HEAD
 <button id="btn btn-succes" class="btn btn-success" type="submit" [disabled]="!f.valid">{{ editMode ? 'Update' : 'Add' }}</button>
 <button id="btn btn-danger" class="btn btn-danger" type="button"
  (click) = "onDelete()" *ngIf="editMode">Delete</button>
 <button id="btn btn-primary" class="btn btn-primary" type="button" (click)="onClear()">Clear</button>
+=======
+<button class="btn btn-success" type="submit" [disabled]="!f.valid">{{ editMode ? 'Update' : 'Add' }}</button>
+<button class="btn btn-danger" type="button"
+ (click) = "onDelete()" *ngIf="editMode">Delete</button>
+<button class="btn btn-primary" type="button" (click)="onClear()">Clear</button>
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 </div>
 </div>
 </form>

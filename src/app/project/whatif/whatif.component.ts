@@ -11,13 +11,18 @@ import { CarouselService } from '../../carousel/carousel.service';
 export class WhatifComponent implements OnInit {
 
   whatifs: TCarousel[];
+<<<<<<< HEAD
   whatifsChanged: TCarousel[];
+=======
+  thumbsChanged: TCarousel[];
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
   
   constructor(private carouselService: CarouselService, 
   	private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
    
+<<<<<<< HEAD
    this.carouselService.whatifsChanged.subscribe(
     (whatifs: TCarousel[]) => {
       this.whatifs = whatifs; 
@@ -27,3 +32,11 @@ export class WhatifComponent implements OnInit {
   }
  
   }
+=======
+  this.whatifs = this.carouselService.getWhatIf(); 
+  }
+ 
+
+
+}
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd

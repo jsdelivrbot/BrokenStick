@@ -11,17 +11,25 @@ import { CarouselService } from '../../carousel/carousel.service';
 export class SignsComponent implements OnInit {
 
  signs: TCarousel[];
+<<<<<<< HEAD
   signsChanged: TCarousel[];
+=======
+  thumbsChanged: TCarousel[];
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
   
   constructor(private carouselService: CarouselService, 
   	private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+<<<<<<< HEAD
    this.carouselService.signsChanged.subscribe(
     (signs: TCarousel[]) => {
       this.signs = signs; 
     }
     ) 
+=======
+   
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
   this.signs = this.carouselService.getSigns(); 
   }
  

@@ -7,9 +7,12 @@ import {Subject } from 'rxjs/Subject';
 
 export class CarouselService {
     thumbsChanged = new Subject<TCarousel[]>();
+<<<<<<< HEAD
     whatifsChanged = new Subject<TCarousel[]>(); 
     signsChanged = new Subject<TCarousel[]>(); 
     
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 	private thumbs: TCarousel[] = [
 
     new TCarousel('../assets/images/Broken/2017/Whatif/WhatifElephant.png',
@@ -38,6 +41,7 @@ export class CarouselService {
     new TCarousel('../assets/images/Broken/2017/BrokenStick/Conan-FIRSTBASE-Broken.png'),
     
     ];
+<<<<<<< HEAD
     private whatifs: TCarousel[] = [
 
     new TCarousel('../assets/images/Broken/2017/Whatif/WhatifElephant.png',
@@ -60,6 +64,8 @@ export class CarouselService {
     
     new TCarousel('../assets/images/Broken/2017/Signs Collection/Stop-Dragonfly.png'),
     ];
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 
     	constructor(){}
 
@@ -69,6 +75,7 @@ export class CarouselService {
     	getThumb(index: number){
     		return this.thumbs[index]; 
     	}
+<<<<<<< HEAD
         getWhatIfs(){ 
             return this.whatifs.slice();
         }
@@ -81,6 +88,13 @@ export class CarouselService {
         }
         getSign(index: number){
             return this.signs[index]; 
+=======
+        getWhatIf(){ 
+            return this.thumbs.slice(0,3);
+        }
+        getSigns(){
+            return this.thumbs.slice(3,8);
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
         }
         
       

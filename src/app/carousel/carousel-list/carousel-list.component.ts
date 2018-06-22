@@ -24,8 +24,11 @@ export class CarouselListComponent implements OnInit {
     }
     )  
   this.thumbs = this.carouselService.getThumbs(); 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
   }
 
 }

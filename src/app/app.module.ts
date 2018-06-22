@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+<<<<<<< HEAD
 import { HttpModule } from '@angular/http'; 
 
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
@@ -13,7 +16,11 @@ import { CarouselListComponent } from './carousel/carousel-list/carousel-list.co
 import { CarouselItemComponent } from './carousel/carousel-list/carousel-item/carousel-item.component';
 import { CarouselStartComponent } from './carousel/carousel-start/carousel-start.component';
 import { CarouselService } from './carousel/carousel.service';
+<<<<<<< HEAD
 import { leftNavComponent } from './project/leftNav/leftNav.component';
+=======
+import { leftNavComponent } from './header/leftNav/leftNav.component';
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 import { RecipebookComponent } from './recipe/recipe.component';
 import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
@@ -30,6 +37,7 @@ import { SignsComponent } from './project/signs/signs.component';
 import { TshirtComponent } from './tshirt/tshirt.component';
 import { MaxComponent } from './tshirt/max/max.component';
 import { AnimalsComponent } from './tshirt/animals/animals.component';
+<<<<<<< HEAD
 // Report Demo
 import { RegisterComponent } from './report/register/register.component';
 import { ReportComponent } from './report/report.component';
@@ -49,11 +57,16 @@ import { DatabaseComponent } from './database/database.component';
 import { HomeComponent } from './home/home.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { PageNotFoundComponent } from './not-found.component';
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
      HomeComponent,
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
     HeaderComponent,
     leftNavComponent,
     CarouselComponent,
@@ -76,6 +89,7 @@ import { PageNotFoundComponent } from './not-found.component';
     TshirtComponent,
     MaxComponent,
     AnimalsComponent,
+<<<<<<< HEAD
     // Report Demo
     RegisterComponent,
     ReportComponent,
@@ -92,22 +106,32 @@ import { PageNotFoundComponent } from './not-found.component';
    
     JavascriptComponent,
     PageNotFoundComponent,
+=======
+  
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     FormsModule, 
+<<<<<<< HEAD
     HttpModule,
     ReactiveFormsModule,
+=======
+    ReactiveFormsModule
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
   ],
   providers: [
   RecipeService,
   ShoppingListService,
   CarouselService, 
+<<<<<<< HEAD
   UserReportService, 
   TodoDataService, 
   ApiService,
+=======
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
  
   ],
  

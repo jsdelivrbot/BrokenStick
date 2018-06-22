@@ -4,7 +4,11 @@
 	<div class="row">
 		<div class="col-xs-12">
 		 <button type="submit"
+<<<<<<< HEAD
 		  class="btn btn-success" id-="btn btn-success"
+=======
+		  class="btn btn-success"
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 		  [disabled]="!recipeForm.valid"> Save</button>
 		 <button type="button" class="btn btn-danger" (click)="onCancel()"
 		 > Cancel</button>	
@@ -43,11 +47,15 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12" formArrayName="ingredients">
+<<<<<<< HEAD
 		<!-- <div class="row" 
 		*ngFor="let ingredientCtrl of recipeForm('ingredients');
 		 let i = index" [formGroupName]="i"
 		 style="margin-top: 10px;"> -->
 		 <div class="row" 
+=======
+		<div class="row" 
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 		*ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls;
 		 let i = index" [formGroupName]="i"
 		 style="margin-top: 10px;">

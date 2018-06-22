@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router, ActivatedRoute } from '@angular/router'; 
 import { CarouselService } from '../carousel/carousel.service';
 import { TCarousel } from '../carousel/carousel.model';
+=======
+
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
@@ -9,6 +13,7 @@ import { TCarousel } from '../carousel/carousel.model';
 })
 export class ProjectComponent implements OnInit {
 
+<<<<<<< HEAD
    mybool:boolean;
    thumbs: TCarousel[];
 
@@ -28,3 +33,11 @@ ngOnInit(){
 
 
 
+=======
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd

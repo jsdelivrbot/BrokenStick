@@ -17,6 +17,7 @@ export class CarouselComponent implements OnInit {
   thumbsChanged: TCarousel[];
   
   constructor(private carouselService: CarouselService, 
+<<<<<<< HEAD
   	private router: Router, private route: ActivatedRoute) {
     this.navLink();
      }
@@ -39,3 +40,12 @@ export class CarouselComponent implements OnInit {
   }
     
  }  
+=======
+  	private router: Router, private route: ActivatedRoute) { }
+
+  ngOnInit() {
+   
+  this.thumbs = this.carouselService.getThumbs(); 
+  }
+ }
+>>>>>>> 96911c554a5d2c5e490b720523c328313a65f0bd
